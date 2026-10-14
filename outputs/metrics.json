@@ -1,0 +1,733 @@
+{
+  "data": {
+    "raw_rows": 473293,
+    "after_label_filter": 442416,
+    "after_duplicates": 440544,
+    "bad_coordinates": 1432,
+    "report_date_outside_window": 564,
+    "invalid_install_year": 1733,
+    "final_rows": 438538,
+    "no_water_rate": 0.23956874888835175,
+    "countries": 32
+  },
+  "validation": [
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.6520697918873626,
+      "pr_auc": 0.3507328789329632,
+      "brier": 0.1714532299685791,
+      "ece": 0.00014244581115827534,
+      "precision_at_share": 0.4105896839512929,
+      "model": "country_rate",
+      "regime": "random",
+      "auc_fold_mean": 0.6525493087645109,
+      "auc_fold_se": 0.0005237504661890336
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.7538223724724143,
+      "pr_auc": 0.5051829657264314,
+      "brier": 0.1532556698655163,
+      "ece": 0.01594511774318217,
+      "precision_at_share": 0.6018835225977106,
+      "model": "logistic",
+      "regime": "random",
+      "auc_fold_mean": 0.7538338978334301,
+      "auc_fold_se": 0.000634188632395403
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.8373200053307075,
+      "pr_auc": 0.6546853284745069,
+      "brier": 0.12818229080622234,
+      "ece": 0.0064814896088292735,
+      "precision_at_share": 0.7549368358644594,
+      "model": "boosted_attributes",
+      "regime": "random",
+      "auc_fold_mean": 0.8373479457948675,
+      "auc_fold_se": 0.0006360229324442816
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.8591267494133702,
+      "pr_auc": 0.6922644662863503,
+      "brier": 0.1209600419016383,
+      "ece": 0.01325293365869005,
+      "precision_at_share": 0.8002234687827792,
+      "model": "boosted_location_no_timing",
+      "regime": "random",
+      "auc_fold_mean": 0.8591403264719419,
+      "auc_fold_se": 0.000713623387391788
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.8598787052176066,
+      "pr_auc": 0.6942307696891782,
+      "brier": 0.1205927490317631,
+      "ece": 0.012690452279521128,
+      "precision_at_share": 0.8031422447211201,
+      "model": "boosted_location_no_year",
+      "regime": "random",
+      "auc_fold_mean": 0.8598846352775524,
+      "auc_fold_se": 0.0008632610060465953
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.8626421386259426,
+      "pr_auc": 0.6986408103344385,
+      "brier": 0.11964431656630112,
+      "ece": 0.012886455536527505,
+      "precision_at_share": 0.8077712409358325,
+      "model": "boosted_with_location",
+      "regime": "random",
+      "auc_fold_mean": 0.8626558285241304,
+      "auc_fold_se": 0.0008676291291138512
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.875589507374816,
+      "pr_auc": 0.7238598750633737,
+      "brier": 0.11402342014807433,
+      "ece": 0.005085820273140271,
+      "precision_at_share": 0.8333561362703517,
+      "model": "boosted_with_neighbours",
+      "regime": "random",
+      "auc_fold_mean": 0.8755999560060769,
+      "auc_fold_se": 0.0009165298471298612
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.6241389064387632,
+      "pr_auc": 0.32718047141713164,
+      "brier": 0.17437073938789777,
+      "ece": 0.02848401499133918,
+      "precision_at_share": 0.3553837734300178,
+      "model": "country_rate",
+      "regime": "spatial_block",
+      "auc_fold_mean": 0.6261621055951685,
+      "auc_fold_se": 0.019009229597874964
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.7358011908668303,
+      "pr_auc": 0.4583077055972914,
+      "brier": 0.15876889779477918,
+      "ece": 0.023044892062287426,
+      "precision_at_share": 0.5487298764080814,
+      "model": "logistic",
+      "regime": "spatial_block",
+      "auc_fold_mean": 0.7351088658644793,
+      "auc_fold_se": 0.018851294469064184
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.7896994606824933,
+      "pr_auc": 0.5723663430348923,
+      "brier": 0.14388330932595425,
+      "ece": 0.02476094942169152,
+      "precision_at_share": 0.6469421261458476,
+      "model": "boosted_attributes",
+      "regime": "spatial_block",
+      "auc_fold_mean": 0.7877741695316469,
+      "auc_fold_se": 0.023195392328159946
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.8089267675019219,
+      "pr_auc": 0.605829540736844,
+      "brier": 0.1373528085239556,
+      "ece": 0.011974894185117928,
+      "precision_at_share": 0.6989100196105258,
+      "model": "boosted_location_no_timing",
+      "regime": "spatial_block",
+      "auc_fold_mean": 0.8067916473922755,
+      "auc_fold_se": 0.018732278558131903
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.8068068147173413,
+      "pr_auc": 0.6019848491079856,
+      "brier": 0.13827592378661188,
+      "ece": 0.013928692538218376,
+      "precision_at_share": 0.6959228348611302,
+      "model": "boosted_location_no_year",
+      "regime": "spatial_block",
+      "auc_fold_mean": 0.8043350509802172,
+      "auc_fold_se": 0.02003384810768629
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.8105222639485258,
+      "pr_auc": 0.6094774102517642,
+      "brier": 0.13696510056916814,
+      "ece": 0.014279148568750922,
+      "precision_at_share": 0.7047931773612441,
+      "model": "boosted_with_location",
+      "regime": "spatial_block",
+      "auc_fold_mean": 0.8077040649950183,
+      "auc_fold_se": 0.02192659228622161
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.7877587436304501,
+      "pr_auc": 0.5728634859628372,
+      "brier": 0.14574483258207171,
+      "ece": 0.036535517704000396,
+      "precision_at_share": 0.6612167647192958,
+      "model": "boosted_with_neighbours",
+      "regime": "spatial_block",
+      "auc_fold_mean": 0.7863774630607892,
+      "auc_fold_se": 0.021727412558491612
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.45262365827691087,
+      "pr_auc": 0.2183127092341798,
+      "brier": 0.1835049710026693,
+      "ece": 0.00689580166359996,
+      "precision_at_share": 0.17617549140329275,
+      "model": "country_rate",
+      "regime": "country_holdout",
+      "auc_fold_mean": 0.5,
+      "auc_fold_se": 0.0
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.5364891020506695,
+      "pr_auc": 0.2721908804474285,
+      "brier": 0.24318852042013375,
+      "ece": 0.21374888401106865,
+      "precision_at_share": 0.3124230400875633,
+      "model": "logistic",
+      "regime": "country_holdout",
+      "auc_fold_mean": 0.5858877575967915,
+      "auc_fold_se": 0.07144725749406305
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.6405361054170565,
+      "pr_auc": 0.3398540964654918,
+      "brier": 0.18039213491320658,
+      "ece": 0.061604531725757854,
+      "precision_at_share": 0.37517672276189173,
+      "model": "boosted_attributes",
+      "regime": "country_holdout",
+      "auc_fold_mean": 0.6447114092954873,
+      "auc_fold_se": 0.007463216733757512
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.564577943675015,
+      "pr_auc": 0.2836759562087421,
+      "brier": 0.192287632410517,
+      "ece": 0.0926114010339378,
+      "precision_at_share": 0.3012496009486022,
+      "model": "boosted_location_no_timing",
+      "regime": "country_holdout",
+      "auc_fold_mean": 0.5791289765900904,
+      "auc_fold_se": 0.030529125794991795
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.5663004333360897,
+      "pr_auc": 0.2924169088051647,
+      "brier": 0.1894057908254723,
+      "ece": 0.08140435112384108,
+      "precision_at_share": 0.31358598987549596,
+      "model": "boosted_location_no_year",
+      "regime": "country_holdout",
+      "auc_fold_mean": 0.5732478751551031,
+      "auc_fold_se": 0.03019034068669484
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.6380574963104505,
+      "pr_auc": 0.3367469715199576,
+      "brier": 0.18073815387476522,
+      "ece": 0.06435118277460991,
+      "precision_at_share": 0.40160532676608746,
+      "model": "boosted_with_location",
+      "regime": "country_holdout",
+      "auc_fold_mean": 0.6516388734154179,
+      "auc_fold_se": 0.022624850445515234
+    },
+    {
+      "n": 438538,
+      "prevalence": 0.23956874888835175,
+      "auc": 0.6048115304565471,
+      "pr_auc": 0.292540978041429,
+      "brier": 0.19652922956192667,
+      "ece": 0.09995265260406627,
+      "precision_at_share": 0.286587312445843,
+      "model": "boosted_with_neighbours",
+      "regime": "country_holdout",
+      "auc_fold_mean": 0.6185127336605285,
+      "auc_fold_se": 0.021138306110347956
+    },
+    {
+      "n": 93425,
+      "prevalence": 0.15652127374899652,
+      "auc": 0.5292842225234047,
+      "pr_auc": 0.18348345696206497,
+      "brier": 0.14061221894180628,
+      "ece": 0.09825776240181136,
+      "precision_at_share": 0.20959109398415757,
+      "model": "country_rate",
+      "regime": "forward_in_time",
+      "auc_fold_mean": 0.5292842225234047,
+      "auc_fold_se": null
+    },
+    {
+      "n": 93425,
+      "prevalence": 0.15652127374899652,
+      "auc": 0.6739304010262426,
+      "pr_auc": 0.3129997829092408,
+      "brier": 0.12413574779817989,
+      "ece": 0.039121043918497564,
+      "precision_at_share": 0.4196103618068936,
+      "model": "logistic",
+      "regime": "forward_in_time",
+      "auc_fold_mean": 0.6739304010262426,
+      "auc_fold_se": null
+    },
+    {
+      "n": 93425,
+      "prevalence": 0.15652127374899652,
+      "auc": 0.6388550597443172,
+      "pr_auc": 0.41854122815421874,
+      "brier": 0.12024806752274193,
+      "ece": 0.07641574824775282,
+      "precision_at_share": 0.5201241704131877,
+      "model": "boosted_attributes",
+      "regime": "forward_in_time",
+      "auc_fold_mean": 0.6388550597443172,
+      "auc_fold_se": null
+    },
+    {
+      "n": 93425,
+      "prevalence": 0.15652127374899652,
+      "auc": 0.710861293236524,
+      "pr_auc": 0.45530510958947223,
+      "brier": 0.11602306338631567,
+      "ece": 0.09120649411635033,
+      "precision_at_share": 0.6040462427745664,
+      "model": "boosted_location_no_timing",
+      "regime": "forward_in_time",
+      "auc_fold_mean": 0.710861293236524,
+      "auc_fold_se": null
+    },
+    {
+      "n": 93425,
+      "prevalence": 0.15652127374899652,
+      "auc": 0.7176130804020322,
+      "pr_auc": 0.45001636459320127,
+      "brier": 0.11548558192795379,
+      "ece": 0.09498457926628727,
+      "precision_at_share": 0.5741811175337187,
+      "model": "boosted_location_no_year",
+      "regime": "forward_in_time",
+      "auc_fold_mean": 0.7176130804020322,
+      "auc_fold_se": null
+    },
+    {
+      "n": 93425,
+      "prevalence": 0.15652127374899652,
+      "auc": 0.7149859146184954,
+      "pr_auc": 0.4308562679529783,
+      "brier": 0.11373359776787119,
+      "ece": 0.05875014558692438,
+      "precision_at_share": 0.5301862556197816,
+      "model": "boosted_with_location",
+      "regime": "forward_in_time",
+      "auc_fold_mean": 0.7149859146184954,
+      "auc_fold_se": null
+    },
+    {
+      "n": 93425,
+      "prevalence": 0.15652127374899652,
+      "auc": 0.6677743663595122,
+      "pr_auc": 0.39259569840944425,
+      "brier": 0.1241467934916429,
+      "ece": 0.09842346644430856,
+      "precision_at_share": 0.5267608649111539,
+      "model": "boosted_with_neighbours",
+      "regime": "forward_in_time",
+      "auc_fold_mean": 0.6677743663595122,
+      "auc_fold_se": null
+    }
+  ],
+  "selection": {
+    "shipped_model": "boosted_location_no_timing",
+    "best": "boosted_with_location",
+    "best_auc": 0.8105222639485258,
+    "gap_to_best": {
+      "country_rate": {
+        "gap": 0.18638335750976254,
+        "ci": [
+          0.17422855524984604,
+          0.19771750820914066
+        ]
+      },
+      "logistic": {
+        "gap": 0.07472107308169551,
+        "ci": [
+          0.06998167374584356,
+          0.08043700672239411
+        ]
+      },
+      "boosted_attributes": {
+        "gap": 0.020822803266032475,
+        "ci": [
+          0.017349779933923025,
+          0.024534299400451917
+        ]
+      },
+      "boosted_location_no_timing": {
+        "gap": 0.001595496446603839,
+        "ci": [
+          -0.0017358854297581383,
+          0.0040528293349362705
+        ]
+      },
+      "boosted_location_no_year": {
+        "gap": 0.0037154492311844978,
+        "ci": [
+          0.002186966265582543,
+          0.00522258257882548
+        ]
+      },
+      "boosted_with_location": {
+        "gap": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "boosted_with_neighbours": {
+        "gap": 0.022763520318075714,
+        "ci": [
+          0.016158650668494444,
+          0.029922557756875506
+        ]
+      }
+    }
+  },
+  "shipped_spatial_auc": {
+    "auc": 0.8089267675019219,
+    "ci": [
+      0.8002650677412693,
+      0.8168688264872522
+    ]
+  },
+  "calibration": {
+    "ece_raw": 0.015382157136340054,
+    "ece_calibrated": 0.023095874018928562,
+    "brier_raw": 0.13763791392425717,
+    "brier_calibrated": 0.1381357150335889,
+    "calibrator_shipped": false
+  },
+  "conformal": {
+    "confidence": 0.9,
+    "coverage": 0.8913654628572578,
+    "single_label_share": 0.7405012044799614,
+    "both_labels_share": 0.25318219079566084,
+    "empty_share": 0.0063166047243777695,
+    "single_label_accuracy": 0.8618261093981336,
+    "worst_country_coverage": 0.4028776978417266,
+    "worst_country": "Peru",
+    "median_country_coverage": 0.8872876961279182,
+    "countries_below_80pct": [
+      "Burkina Faso",
+      "Peru"
+    ],
+    "countries_checked": 18
+  },
+  "economics": {
+    "share_visited": 0.1,
+    "assumptions": {
+      "cost_per_visit_usd": 35.0,
+      "visits_per_tech_day": 6,
+      "note": "A visit confirms and logs a fault; repair cost is excluded."
+    },
+    "random": {
+      "precision": 0.23956874888835175,
+      "faults_per_1000_visits": 239.56874888835176,
+      "cost_per_fault_usd": 146.09584999048164,
+      "tech_days_per_100_faults": 69.56945237641982
+    },
+    "country_prior": {
+      "precision": 0.3553837734300178,
+      "precision_ci": [
+        0.336654735538731,
+        0.3752917784266967
+      ],
+      "faults_per_1000_visits": 355.3837734300178,
+      "cost_per_fault_usd": 98.48508180943215,
+      "tech_days_per_100_faults": 46.8976580044915
+    },
+    "model": {
+      "precision": 0.6989100196105258,
+      "precision_ci": [
+        0.6760991964285067,
+        0.725065269305422
+      ],
+      "faults_per_1000_visits": 698.9100196105258,
+      "cost_per_fault_usd": 50.07797716150082,
+      "tech_days_per_100_faults": 23.846655791190866
+    },
+    "model_minus_country_prior": {
+      "precision_gain": 0.343526246180508,
+      "ci": [
+        0.31420827795431994,
+        0.37316632726368715
+      ]
+    },
+    "saving_per_1000_faults_vs_random_usd": 96017.87282898079,
+    "saving_per_1000_faults_vs_country_prior_usd": 48407.10464793132
+  },
+  "lift": [
+    {
+      "share_visited": 0.01,
+      "precision": 0.9897377423033067,
+      "lift": 4.1313307636989105
+    },
+    {
+      "share_visited": 0.025,
+      "precision": 0.9448143756271093,
+      "lift": 3.943813122584821
+    },
+    {
+      "share_visited": 0.05,
+      "precision": 0.8295252428512793,
+      "lift": 3.4625770126548097
+    },
+    {
+      "share_visited": 0.1,
+      "precision": 0.6989100196105258,
+      "lift": 2.9173672394818273
+    },
+    {
+      "share_visited": 0.2,
+      "precision": 0.5925229169517033,
+      "lift": 2.473289691168533
+    },
+    {
+      "share_visited": 0.3,
+      "precision": 0.5067459201435076,
+      "lift": 2.1152421695021277
+    },
+    {
+      "share_visited": 0.5,
+      "precision": 0.39511285224997605,
+      "lift": 1.6492670854749667
+    }
+  ],
+  "by_report_year": [
+    {
+      "year": 2005,
+      "n": 6000,
+      "observed": 0.44683333333333336,
+      "predicted": 0.43005013448592466
+    },
+    {
+      "year": 2006,
+      "n": 2904,
+      "observed": 0.5148071625344353,
+      "predicted": 0.5523364382560711
+    },
+    {
+      "year": 2007,
+      "n": 7224,
+      "observed": 0.32682724252491696,
+      "predicted": 0.31396665297569687
+    },
+    {
+      "year": 2008,
+      "n": 9522,
+      "observed": 0.41136315900021003,
+      "predicted": 0.4513041499849108
+    },
+    {
+      "year": 2010,
+      "n": 97487,
+      "observed": 0.22030629724988973,
+      "predicted": 0.23246337526059624
+    },
+    {
+      "year": 2011,
+      "n": 12876,
+      "observed": 0.20363466915191053,
+      "predicted": 0.205860831160277
+    },
+    {
+      "year": 2012,
+      "n": 39739,
+      "observed": 0.2003573315886157,
+      "predicted": 0.17727576666352104
+    },
+    {
+      "year": 2013,
+      "n": 7749,
+      "observed": 0.0841398890179378,
+      "predicted": 0.13048723272756618
+    },
+    {
+      "year": 2014,
+      "n": 54491,
+      "observed": 0.17812115762235967,
+      "predicted": 0.21270275743773914
+    },
+    {
+      "year": 2015,
+      "n": 104086,
+      "observed": 0.3516419114962627,
+      "predicted": 0.3568237552095022
+    },
+    {
+      "year": 2016,
+      "n": 44095,
+      "observed": 0.21154325887288808,
+      "predicted": 0.2196169104837829
+    },
+    {
+      "year": 2017,
+      "n": 19616,
+      "observed": 0.1911194942903752,
+      "predicted": 0.191590333819918
+    },
+    {
+      "year": 2019,
+      "n": 5935,
+      "observed": 0.040269587194608256,
+      "predicted": 0.045021954043695495
+    },
+    {
+      "year": 2020,
+      "n": 9915,
+      "observed": 0.08643469490670701,
+      "predicted": 0.09742135127012463
+    },
+    {
+      "year": 2021,
+      "n": 12093,
+      "observed": 0.013975026875051684,
+      "predicted": 0.017043689165249714
+    }
+  ],
+  "country_holdout": {
+    "countries": 19,
+    "median_auc": 0.6243646989040346,
+    "worst": [
+      {
+        "country": "Central African Republic",
+        "n": 2447,
+        "dry_rate": 0.17531671434409482,
+        "auc": 0.4580119253062761
+      },
+      {
+        "country": "Rwanda",
+        "n": 2773,
+        "dry_rate": 0.26433465560764513,
+        "auc": 0.469124000214001
+      },
+      {
+        "country": "Ethiopia",
+        "n": 24981,
+        "dry_rate": 0.09042872583163204,
+        "auc": 0.48434134638669546
+      }
+    ],
+    "best": [
+      {
+        "country": "Liberia",
+        "n": 28420,
+        "dry_rate": 0.19278676988036594,
+        "auc": 0.7851394332378003
+      },
+      {
+        "country": "Madagascar",
+        "n": 800,
+        "dry_rate": 0.1325,
+        "auc": 0.8355989342613236
+      },
+      {
+        "country": "Mozambique",
+        "n": 2436,
+        "dry_rate": 0.021346469622331693,
+        "auc": 0.9688911654620547
+      }
+    ]
+  },
+  "status_text_audit": {
+    "rows": 357749,
+    "share_of_labelled_rows": 0.8157765119556344,
+    "auc": 0.9907996155142986
+  },
+  "importance": [
+    {
+      "group": "payment arrangement",
+      "auc_drop": 0.10509129625169596,
+      "auc_drop_sd": 0.0017763852192717593
+    },
+    {
+      "group": "country",
+      "auc_drop": 0.07109598046997789,
+      "auc_drop_sd": 0.0015610065232524615
+    },
+    {
+      "group": "water source",
+      "auc_drop": 0.05537460050565094,
+      "auc_drop_sd": 0.0009717296059489918
+    },
+    {
+      "group": "location",
+      "auc_drop": 0.04781143203494268,
+      "auc_drop_sd": 0.0012153277705618819
+    },
+    {
+      "group": "installation year",
+      "auc_drop": 0.04043058582797806,
+      "auc_drop_sd": 0.0005409058216645065
+    },
+    {
+      "group": "pump technology",
+      "auc_drop": 0.020393541799033743,
+      "auc_drop_sd": 0.0003834108453280445
+    },
+    {
+      "group": "installer",
+      "auc_drop": 0.02036084289578703,
+      "auc_drop_sd": 0.0007236868822615866
+    },
+    {
+      "group": "survey timing",
+      "auc_drop": 0.013014072815656327,
+      "auc_drop_sd": 0.00032648589964649765
+    },
+    {
+      "group": "facility type",
+      "auc_drop": 0.00027094857409193374,
+      "auc_drop_sd": 0.00010060157894912584
+    }
+  ]
+}
