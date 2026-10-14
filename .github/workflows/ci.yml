@@ -1,0 +1,55 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e . pytest pytest-cov ruff
+      - name: Lint
+        run: ruff check .
+      - name: Test
+        run: pytest --cov=dryspot --cov-report=term-missing
+
+  train:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Download data
+        run: dryspot download
+      - name: Train on a subsample
+        run: dryspot train --max-rows 120000 --folds 3 --bootstrap 50 --out build_outputs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dryspot-model-and-metrics
+          path: |
+            build_outputs/model.joblib
+            build_outputs/metrics.json
+            build_outputs/validation_results.csv
